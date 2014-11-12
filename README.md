@@ -9,8 +9,15 @@ systemR
 
 Installing directly from Github requires some helper packages. The easies way to setup **systemR** is to source the following «[init.R][1]» script and then install and run the package with the packagesGithub function. 
 
+#### Windows:
 ```
 source("https://rawgit.com/greenore/initR/master/init.R")
+packagesGithub("systemR", repo_name="greenore")
+```
+
+#### Linux:
+```
+source(pipe(paste("wget -O -", "https://rawgit.com/greenore/initR/master/init.R")))
 packagesGithub("systemR", repo_name="greenore")
 ```
 
