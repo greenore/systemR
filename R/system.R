@@ -1,8 +1,13 @@
-# System Functions
-#-----------------
+## System Functions
+
+#' @title Get System information
 #' @export
-## Overall Meta functions
-# Get System information
+#' 
+#' @description \code{sysInfo} Returns informatin about the OS etc.
+#' 
+#' @examples
+#' captcha <- sysInfo()
+
 sysInfo <- function(){
   sys.info <- list()
   sys.info$sys_name <- Sys.info()["sysname"][[1]]
